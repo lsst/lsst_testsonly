@@ -1,0 +1,2 @@
+setupRequired(descwl_shear_sims)
+setupRequired(descwl_coadd)
