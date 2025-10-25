@@ -1,0 +1,9 @@
+import os
+
+from lsst.sconsUtils import scripts
+from lsst.utils import getPackageDir
+
+metadetect_path = getPackageDir("metadetect")
+test_path = os.path.join(metadetect_path, "metadetect", "lsst", "tests")
+
+scripts.BasicSConscript.tests(pyList=[test_path])
